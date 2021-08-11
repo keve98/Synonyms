@@ -16,6 +16,7 @@ public class SynonymDictionary {
             String[] splited = l.split("\\s+");
             firstWord = splited[0];
             secondWord = splited[1];
+
             if(splited[0].equals(splited[1])){
                 result += "synonyms\n";
             }
@@ -34,7 +35,7 @@ public class SynonymDictionary {
         int sizeInTheBegining = synonymList.size();
 
 
-        ArrayList<String> tempList= dictionary.get(word);
+        ArrayList<String> tempList = dictionary.get(word);
 
         if(tempList != null) {
             for (String l : tempList){
